@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ---- custom css here ---- -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Boxicons CSS -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+  <title>Saas Landing page</title>
+</head>
+
+<body>
+  <!-- ---- header start--- -->
+  <header>
+    <nav class="navbar flex space-between padding">
+      <div class="logo"><img src="img/logo.svg" alt="logo"></div>
+      <ul class="menu-list flex">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">Blog</a></li>
+        <li class="close flex"><i class='bx bx-x'></i></li>
+      </ul>
+      <div class="nav-buttons flex">
+        <button class="btn">FREE TRIAL</button>
+        <i class='bx bx-menu bar'></i>
+      </div>
+    </nav>
+  </header>
+  <!-- ---- header end --- -->
+
+  <main>
+    <!-- ---- home section ---- -->
+    <section class="home-section">
+      <div class="home-content flex space-between">
+        <div class="data">
+          <h1>Codext one of <br />the best system <br />in SAAS</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque ab repellendus labore eius at modi quam
+            est accusamus tempora dolores.</p>
+        </div>
+        <div class="img">
+          <img src="img/1.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-content flex min-width">
+        <div class="about-img">
+          <img src="img/2.svg" alt="">
+        </div>
+        <div class="about-data">
+          <h2>It's helpful for operating system</h2>
+          <div class="about-box">
+            <h5 class="flex"><img src="img/8.svg"><span>Ultra fast & Secure</span></h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit voluptatum excepturi obcaecati ut,
+              quis illo!</p>
+          </div>
+          <div class="about-box">
+            <h5 class="flex"><img src="img/7.svg"><span>Allow customization</span></h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit voluptatum excepturi obcaecati ut,
+              quis illo!</p>
+          </div>
+          <div class="about-box">
+            <h5 class="flex"><img src="img/9.svg"><span>Smart Contract</span></h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit voluptatum excepturi obcaecati ut,
+              quis illo!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section">
+        <h1>We Provide Best Feature<br/>for Customer</h1>
+        <div class="feature-boxes grid grid-col-4">
+
+             <div class="feature-box flex">
+                   <div class="feature-img flex"><img src="img/4.svg"></div>
+                   <div class="feature-data active">
+                      <h5>Clean Code</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, ratione!</p>
+                   </div>
+             </div>
+
+             <div class="feature-box flex">
+                   <div class="feature-img flex img-2"><img src="img/3.svg"></div>
+                   <div class="feature-data">
+                      <h5>Clean Code</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, ratione!</p>
+                   </div>
+             </div>
+
+             <div class="feature-box flex">
+                   <div class="feature-img flex img-3"><img src="img/5.svg"></div>
+                   <div class="feature-data">
+                      <h5>Clean Code</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, ratione!</p>
+                   </div>
+             </div>
+
+             <div class="feature-box flex">
+                   <div class="feature-img flex img-4"><img src="img/6.svg"></div>
+                   <div class="feature-data">
+                      <h5>Clean Code</h5>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, ratione!</p>
+                   </div>
+             </div>
+        </div>
+    </section>
+  </main>
+
+
+  <!-- ----- js here --- -->
+  <script>
+    const header = document.querySelector("header"),
+      menu = document.querySelector(".menu-list"),
+      close_btn = document.querySelector(".menu-list .close"),
+      bar = document.querySelector(".bar");
+
+
+
+    bar.addEventListener("click", () => {
+      menu.classList.add("active");
+    });
+
+    close_btn.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+
+    window.onscroll = (() => {
+      if (window.scrollY > 20) {
+        header.classList.add("active");
+        document.querySelector(".home-section").classList.add("active");
+      }
+      else {
+        header.classList.remove("active");
+        document.querySelector(".home-section").classList.remove("active");
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>
