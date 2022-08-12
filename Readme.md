@@ -6,4 +6,4 @@ other properties.
 
 I have completed this webpage within 2 hours
 
-[project-link](http:/abhishekjadhav.netlify.app)
+[project-link](https://abhi17.netlify.app/)
